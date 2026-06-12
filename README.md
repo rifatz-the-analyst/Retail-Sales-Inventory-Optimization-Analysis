@@ -1,4 +1,4 @@
-# Retail-Sales-Inventory-Optimization-Analysis
+# Retail Sales & Inventory Optimization Analysis
 
 ## 1. Project Background
 
@@ -236,3 +236,10 @@ Implement a simple inventory monitoring framework using inventory coverage days 
 - Improve inventory planning decisions.
 - Reduce excess inventory costs.
 - Increase product availability for customers.
+
+## Dashboard Preview
+<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/66ebd3e651a3cf1dddf4a46a96cfc613d7be351d/Overview.png" />
+
+<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/66ebd3e651a3cf1dddf4a46a96cfc613d7be351d/Product.png" />
+
+<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/66ebd3e651a3cf1dddf4a46a96cfc613d7be351d/Inventories.png" />
