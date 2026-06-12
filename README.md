@@ -63,7 +63,8 @@ Dimension Tables:
 - Stores
 - Calendar
 
-![Data Model]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/Data%20Model.png)
+<p align="center">
+<img width="500" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/Data%20Model.png" />
 
 ## 3. Executive Summary
 
@@ -76,6 +77,8 @@ Dimension Tables:
 ## Deep Analysis
 
 ### 4.1 Seasonal Sales Performance
+
+<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/ab8266c569dfe5f9c6a21e006de9a800014b6137/revenue%20trend.png" />
 
 Sales trends show recurring peaks during Q2 and Q4 of 2022. A similar increase was observed during Q2 of 2023, suggesting potential seasonality in customer demand.
 
@@ -96,7 +99,7 @@ Trend analysis shows that fluctuations in Lego Bricks sales closely mirror fluct
 
 ### 4.3 Revenue vs Profit Performance
 
-![Product Contribution]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/revenue%20vs%20profit.png)
+<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/revenue%20vs%20profit.png" />
 
 Although Lego Bricks dominate revenue generation, they are not the largest profit contributor within the Toys category.
 
@@ -110,7 +113,7 @@ This suggests that current sales performance is driven more by high-volume produ
 
 ### 4.4 Electronics Category Performance
 
-![Colorbuds]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/colorbuds.png)
+<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/colorbuds.png" />
 
 The Electronics category contributes:
 - 15.55% of revenue
@@ -126,7 +129,8 @@ However, Colorbuds sales have steadily declined between January 2022 and Septemb
 
 ### 4.5 Emerging Growth Opportunity
 
-![Magic Sand]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/magic%20sand.png)
+<p align="center">
+<img width="300" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/magic%20sand.png" />
 
 Sales analysis identified strong growth within the Art & Crafts category, particularly for Magic Sand.
 
@@ -136,7 +140,7 @@ This trend suggests that Magic Sand could become a future growth driver and may 
 
 ### 4.6 Inventory Optimization Analysis
 
-![Inventory]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/inventory.png)
+<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/inventory.png" />
 
 Inventory analysis reveals a mismatch between stock levels and actual demand across stores.
 
