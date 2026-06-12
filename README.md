@@ -63,7 +63,7 @@ Dimension Tables:
 - Stores
 - Calendar
 
-
+![Data Model]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/Data%20Model.png)
 
 ## 3. Executive Summary
 
@@ -96,6 +96,8 @@ Trend analysis shows that fluctuations in Lego Bricks sales closely mirror fluct
 
 ### 4.3 Revenue vs Profit Performance
 
+![Product Contribution]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/revenue%20vs%20profit.png)
+
 Although Lego Bricks dominate revenue generation, they are not the largest profit contributor within the Toys category.
 
 Action Figures contribute:
@@ -107,6 +109,8 @@ A similar pattern appears across other categories, where the products generating
 This suggests that current sales performance is driven more by high-volume products than by products generating the strongest margins.
 
 ### 4.4 Electronics Category Performance
+
+![Colorbuds]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/colorbuds.png)
 
 The Electronics category contributes:
 - 15.55% of revenue
@@ -122,6 +126,8 @@ However, Colorbuds sales have steadily declined between January 2022 and Septemb
 
 ### 4.5 Emerging Growth Opportunity
 
+![Magic Sand]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/magic%20sand.png)
+
 Sales analysis identified strong growth within the Art & Crafts category, particularly for Magic Sand.
 
 Beginning in Q4 2022, Magic Sand experienced sustained revenue growth and increased contribution to category performance. In 14 months, Magic Sand's revenue increased from $80 to $72,368 (a cumulative growth of 90,360%) with a compound monthly growth rate of 63.6%.
@@ -129,6 +135,8 @@ Beginning in Q4 2022, Magic Sand experienced sustained revenue growth and increa
 This trend suggests that Magic Sand could become a future growth driver and may help reduce the company's dependence on Lego Bricks as its primary revenue source.
 
 ### 4.6 Inventory Optimization Analysis
+
+![Inventory]( https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/inventory.png)
 
 Inventory analysis reveals a mismatch between stock levels and actual demand across stores.
 
