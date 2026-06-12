@@ -20,6 +20,8 @@ This analysis aims to answer the following questions:
 
 ## 2. Data Preparation & Data Structure
 
+![ETL Workflows](https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/dfdb677b2ecd898857615f552aa427288774820f/ETL%20Workflows.png)
+
 ### 2.1 Data Sources
 
 The analysis uses five datasets:
@@ -60,6 +62,8 @@ Dimension Tables:
 - Products
 - Stores
 - Calendar
+
+
 
 ## 3. Executive Summary
 
