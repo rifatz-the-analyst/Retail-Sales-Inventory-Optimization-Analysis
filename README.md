@@ -20,7 +20,8 @@ This analysis aims to answer the following questions:
 
 ## 2. Data Preparation & Data Structure
 
-![ETL Workflows](https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/dfdb677b2ecd898857615f552aa427288774820f/ETL%20Workflows.png)
+<p align="center">
+<img width="500" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/ETL%20Workflows.png" />
 
 ### 2.1 Data Sources
 
@@ -64,7 +65,7 @@ Dimension Tables:
 - Calendar
 
 <p align="center">
-<img width="500" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/Data%20Model.png" />
+<img width="500" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Data%20Model.png" />
 
 ## 3. Executive Summary
 
@@ -78,7 +79,7 @@ Dimension Tables:
 
 ### 4.1 Seasonal Sales Performance
 
-<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/ab8266c569dfe5f9c6a21e006de9a800014b6137/revenue%20trend.png" />
+<img width="1000" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/revenue%20trend.png" />
 
 Sales trends show recurring peaks during Q2 and Q4 of 2022. A similar increase was observed during Q2 of 2023, suggesting potential seasonality in customer demand.
 
@@ -92,49 +93,54 @@ Although the pattern appears consistent, additional historical data would be req
 
 ### 4.2 Revenue Concentration Risk
 
-The Toys category contributes 35.25% of total revenue, making it the company's largest revenue driver.
-Within the category, Lego Bricks account for 46.89% of category sales.
+<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/revenue%20vs%20profit.png" />
 
-Trend analysis shows that fluctuations in Lego Bricks sales closely mirror fluctuations in overall company revenue. This indicates that business performance is heavily influenced by a single product, increasing vulnerability to demand changes, competitive pressure, or supply chain disruptions affecting that product.
+The Toys category contributes 35.25% of total revenue, making it the company's largest revenue driver. Within the category, Lego Bricks account for 46.89% of category sales.
+
+Trend analysis shows that changes in Lego Bricks sales closely mirror changes in total company revenue. It supported by a strong positive correlation (r = 0.99) between monthly revenue from Lego Bricks and the company’s total revenue. Combined with the fact that the top 25% of products generate 61.81% of total revenue, this suggests that business performance is highly concentrated among a small number of products.
+
+This indicates that business performance is heavily influenced by top products, increasing vulnerability to demand changes, competitive pressure, or supply chain disruptions affecting that product.
 
 ### 4.3 Revenue vs Profit Performance
-
-<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/revenue%20vs%20profit.png" />
 
 Although Lego Bricks dominate revenue generation, they are not the largest profit contributor within the Toys category.
 
 Action Figures contribute:
+
 - 32.21% of category profit
 - Compared to 27.67% from Lego Bricks
 
-A similar pattern appears across other categories, where the products generating the highest profits are not necessarily the highest-selling products.
+A similar pattern appears across other categories, where the products generating the highest profits are not necessarily the highest-selling products. Lego Bricks products generate the highest revenue because it is the most expensive ($40), with an average order value (AOV) of $49.75.
 
 This suggests that current sales performance is driven more by high-volume products than by products generating the strongest margins.
 
 ### 4.4 Electronics Category Performance
 
-<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/colorbuds.png" />
+<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/colorbuds.png" />
 
 The Electronics category contributes:
+
 - 15.55% of revenue
 - 24.95% of profit
 
 This makes Electronics one of the most profitable categories in the business.
 Colorbuds dominate category performance:
+
 - 69.64% of Electronics revenue
 - 53.33% of Electronics profit
 
-Additionally, Colorbuds contribute 20.80% of total company profit, making them the single largest profit contributor across all products.
-However, Colorbuds sales have steadily declined between January 2022 and September 2023. This trend may indicate weakening demand and warrants further investigation to identify potential causes such as changing customer preferences, increased competition, or product lifecycle effects.
+Additionally, Colorbuds contribute 20.80% ($834.944) of total company profit, making them the single largest profit contributor across all products. However, Colorbuds sales have steadily declined between January 2022 and September 2023. Between January 2022 and September 2023, Colorbuds profit declined by 68%, equivalent to a compound monthly decline rate of 5.54%. If this trend continues over the next three months, annual profit could decrease by an estimated $138,768 (The estimate assumes the historical compound monthly decline rate of 5.54% continues unchanged over the next three months).
+
+This trend may indicate weakening demand and warrants further investigation to identify potential causes such as changing customer preferences, increased competition, or product lifecycle effects.
 
 ### 4.5 Emerging Growth Opportunity
 
 <p align="center">
-<img width="300" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/magic%20sand.png" />
+<img width="300" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/magic%20sand.png" />
 
 Sales analysis identified strong growth within the Art & Crafts category, particularly for Magic Sand.
 
-Beginning in Q4 2022, Magic Sand experienced sustained revenue growth and increased contribution to category performance. In 14 months, Magic Sand's revenue increased from $80 to $72,368 (a cumulative growth of 90,360%) with a compound monthly growth rate of 63.6%.
+Beginning in Q4 2022, Magic Sand experienced sustained revenue growth and increased contribution to category performance. Revenue increased from just $80 in July 2022 to $72,368 by September 2023, with a compound monthly growth rate of 63.6%. Magic Sand also generates 35.8% of total revenue in the Arts & Crafts category (the highest), and ranks third in total revenue across all products.
 
 This trend suggests that Magic Sand could become a future growth driver and may help reduce the company's dependence on Lego Bricks as its primary revenue source.
 
@@ -142,16 +148,20 @@ This trend suggests that Magic Sand could become a future growth driver and may 
 
 <img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/inventory.png" />
 
-Inventory analysis reveals a mismatch between stock levels and actual demand across stores.
+Overall inventory analysis across all stores:
 
-Key findings include:
-- Many top-selling products have fewer than 7 days of inventory coverage.
-- Several lower-demand products have more than 30 days of inventory coverage.
-- Some products are completely out of stock in certain stores.
+- The Mini Basketball Hoop has 234 units in stock and 2.30 orders per day. Therefore, the coverage stock days are 99.67 days (highest). Ideally, inventory should be 71 units for 30 days, resulting in an excess of 163 units. Consequently, the excess inventory of Mini Basketball Hoops ties up approximately $1,467 in capital.
+- The Dino Egg has 649 units in stock and 75.8 orders per day. Therefore, the coverage stock days are 8.56 days (lowest). It looks healthy stock, because the inventory coverage days not less than 7 days.
+
+However, inventory analysis reveals a mismatch between stock levels and actual demand across stores. If we analyse every store inventory, some stores have risky and excessive products:
+
+- Many top-selling products have fewer than 7 days of inventory coverage. There are 40 of 50 stores that have at least one product that inventory coverage days fewer than 7 days. Some products are completely out of stock in certain stores.
+- Several lower-demand products have more than 30 days of inventory coverage. Top 5 product by coverage days in every single store are higher than 30 days.
 
 These conditions create two business risks:
-- Lost sales opportunities from stockouts on high-demand and low-stocks products.
-- Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products.
+
+- Lost sales opportunities from stockouts on high-demand and low-stocks products. For example, the inventory analysis in Ciudad de Mexico 2 Store (highest average daily order). It has six products with lowest coverage days that fewer than 7 days. Those products have $1,120 potential revenue loss.
+- Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products. For example, the inventory analysis in Morelia 1 Store (highest coverage days). It has twelve products with highest coverage days that more than 30 days. Those products have $1,591 excess inventory value.
 
 With Q4 approaching and historical data suggesting stronger seasonal demand, inventory allocation becomes increasingly important to maintain product availability and support revenue growth.
 
@@ -238,8 +248,8 @@ Implement a simple inventory monitoring framework using inventory coverage days 
 - Increase product availability for customers.
 
 ## Dashboard Preview
-<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/66ebd3e651a3cf1dddf4a46a96cfc613d7be351d/Overview.png" />
+<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Overview.png" />
 
-<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/66ebd3e651a3cf1dddf4a46a96cfc613d7be351d/Product.png" />
+<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Product.png" />
 
-<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/66ebd3e651a3cf1dddf4a46a96cfc613d7be351d/Inventories.png" />
+<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Inventories.png" />
