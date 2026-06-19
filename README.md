@@ -150,18 +150,18 @@ This trend suggests that Magic Sand could become a future growth driver and may 
 
 Overall inventory analysis across all stores:
 
-- The Mini Basketball Hoop has 234 units in stock and 2.30 orders per day. Therefore, the coverage stock days are 99.67 days (highest). Ideally, inventory should be 71 units for 30 days, resulting in an excess of 163 units. Consequently, the excess inventory of Mini Basketball Hoops ties up approximately $1,467 in capital.
-- The Dino Egg has 649 units in stock and 75.8 orders per day. Therefore, the coverage stock days are 8.56 days (lowest). It looks healthy stock, because the inventory coverage days not less than 7 days.
+- The Mini Basketball Hoop has 234 units in stock and 2.55 units sold per day. Therefore, the coverage stock days are 91.61 days (highest). Ideally, inventory should be 76 units for 30 days, resulting in an excess of 163 units. Consequently, the excess inventory of Mini Basketball Hoops ties up approximately $1,422 in capital.
+- The Dino Egg has 649 units in stock and 104.03 units sold per day. Therefore, the coverage stock days are 6.24 days (lowest). Ideally, inventory should be 729 units for 7 days. Consequently, the lack inventory of Mini Basketball Hoops makes approximately $800 potential revenue loss.
 
 However, inventory analysis reveals a mismatch between stock levels and actual demand across stores. If we analyse every store inventory, some stores have risky and excessive products:
 
-- Many top-selling products have fewer than 7 days of inventory coverage. There are 40 of 50 stores that have at least one product that inventory coverage days fewer than 7 days. Some products are completely out of stock in certain stores.
+- Many top-selling products have fewer than 7 days of inventory coverage. Every single store has at least one product that inventory coverage days fewer than 7 days. Some products are completely out of stock in certain stores.
 - Several lower-demand products have more than 30 days of inventory coverage. Top 5 product by coverage days in every single store are higher than 30 days.
 
 These conditions create two business risks:
 
-- Lost sales opportunities from stockouts on high-demand and low-stocks products. For example, the inventory analysis in Ciudad de Mexico 2 Store (highest average daily order). It has six products with lowest coverage days that fewer than 7 days. Those products have $1,120 potential revenue loss.
-- Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products. For example, the inventory analysis in Morelia 1 Store (highest coverage days). It has twelve products with highest coverage days that more than 30 days. Those products have $1,591 excess inventory value.
+- Lost sales opportunities from stockouts on high-demand and low-stocks products. For example, the inventory analysis in Ciudad de Mexico 2 Store (highest average daily order). It has eight products with lowest coverage days that fewer than 7 days. Those products have $1,749 potential revenue loss.
+- Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products. For example, the inventory analysis in Morelia 1 Store (highest coverage days). It has twelve products with highest coverage days that more than 30 days. Those products have $1,511 excess inventory value.
 
 With Q4 approaching and historical data suggesting stronger seasonal demand, inventory allocation becomes increasingly important to maintain product availability and support revenue growth.
 
