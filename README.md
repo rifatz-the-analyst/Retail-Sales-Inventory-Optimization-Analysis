@@ -21,7 +21,7 @@ This analysis aims to answer the following questions:
 ## 2. Data Preparation & Data Structure
 
 <p align="center">
-<img width="500" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/ETL%20Workflows.png" />
+<img width="800" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/ETL%20Workflows.png" />
 
 ### 2.1 Data Sources
 
@@ -146,7 +146,7 @@ This trend suggests that Magic Sand could become a future growth driver and may 
 
 ### 4.6 Inventory Optimization Analysis
 
-<img width="1020" src="https://github.com/rifatz-the-analyst/Retail-Sales-Inventory-Optimization-Analysis/blob/809a7cebdaa5b7f61cd6808bfe674ae57f7a617f/inventory.png" />
+<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/78996449b1c2badb4502a634c7c2f0f3687f0655/Inventory%20Coverage.png" />
 
 Overall inventory analysis across all stores:
 
@@ -252,4 +252,4 @@ Implement a simple inventory monitoring framework using inventory coverage days 
 
 <img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Product.png" />
 
-<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Inventories.png" />
+<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/78996449b1c2badb4502a634c7c2f0f3687f0655/Inventory.png" />
