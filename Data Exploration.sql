@@ -186,5 +186,3 @@ FROM
 	GROUP BY product_id) i
 JOIN products_view p
 ON p.product_id = i.product_id;
-
-SELECT SUM(stock_on_hand) total_stock FROM inventory
