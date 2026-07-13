@@ -160,8 +160,8 @@ However, inventory analysis reveals a mismatch between stock levels and actual d
 
 These conditions create two business risks:
 
-- Lost sales opportunities from stockouts on high-demand and low-stocks products. For example, the inventory analysis in Ciudad de Mexico 2 Store (highest average daily order). It has eight products with lowest coverage days that fewer than 7 days. Those products have $1,749 potential revenue loss.
-- Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products. For example, the inventory analysis in Morelia 1 Store (highest coverage days). It has twelve products with highest coverage days that more than 30 days. Those products have $1,511 excess inventory value.
+- Lost sales opportunities from stockouts on high-demand and low-stocks products. For example, the inventory analysis in Ciudad de Mexico 2 Store (highest average daily order). It has eight products with lowest coverage days that fewer than 7 days. Those products have $1,749 potential revenue loss. In addition, an analysis of opportunities across 50 stores shows that there are a total of 370 products have $30,646 potential revenue loss with $8,504 potential profit loss.
+- Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products. For example, the inventory analysis in Morelia 1 Store (highest coverage days). It has twelve products with highest coverage days that more than 30 days. Those products have $1,511 excess inventory value. In addition, an analysis of opportunities across 50 stores shows that there are a total of 492 products have $63,488 excess inventory value.
 
 With Q4 approaching and historical data suggesting stronger seasonal demand, inventory allocation becomes increasingly important to maintain product availability and support revenue growth.
 
