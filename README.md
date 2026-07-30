@@ -97,7 +97,7 @@ Although the pattern appears consistent, additional historical data would be req
 
 The Toys category contributes 35.25% of total revenue, making it the company's largest revenue driver. Within the category, Lego Bricks account for 46.89% of category sales.
 
-Trend analysis shows that changes in Lego Bricks sales closely mirror changes in total company revenue. It supported by a strong positive correlation (r = 0.99) between monthly revenue from Lego Bricks and the company’s total revenue. Combined with the fact that the top 25% of products generate 61.81% of total revenue, this suggests that business performance is highly concentrated among a small number of products.
+Trend analysis shows that changes in Lego Bricks sales closely mirror changes in total company revenue. It supported by a strong positive correlation (r = 0.55) between monthly revenue from Lego Bricks and the company’s total revenue. Combined with the fact that the top 25% of products generate 61.81% of total revenue, this suggests that business performance is highly concentrated among a small number of products.
 
 This indicates that business performance is heavily influenced by top products, increasing vulnerability to demand changes, competitive pressure, or supply chain disruptions affecting that product.
 
