@@ -34,13 +34,41 @@ The analysis uses five datasets:
 
 ### 2.2 Data Cleaning & Preparation
 
-The following preparation steps were performed:
+**The following preparation steps were performed:**
 - Checked for missing and duplicate records.
 - Standardized data format and store naming conventions.
 - Validated transaction and inventory quantities.
 - Validated and standardized product cost and product price
 - Established relationships between sales, products, stores, inventory, and date tables.
 - Created business metrics using DAX measures.
+
+**Transaction and Revenue Profile**
+
+The sales data contains approximately 829K transactions from January 2022 to September 2023. Transaction revenue is relatively concentrated around lower values, with a mean of $17.42 and a median of $15. The maximum transaction revenue is $880, indicating the presence of a small number of high-value transactions.
+
+Using the IQR method, the upper bound for transaction revenue was calculated at $36.45. Approximately 10.84% of transactions exceed this threshold, suggesting that the revenue distribution is right-skewed. These higher-value transactions may be driven by products with higher prices or transactions involving multiple units.
+
+The most frequent transaction revenue value is $16, accounting for 96,401 transactions (11.62%). Further investigation shows that 97.35% of these $16 transactions come from three products: Action Figure, Magic Sand, and Dart Gun, which belong to three different categories. Most $16 transactions are single-unit purchases, indicating that this concentration is primarily related to the pricing of these products rather than customers purchasing multiple units.
+
+**Units per Transaction**
+
+The average number of units per transaction is 1.32, while the median is 1 unit. The maximum transaction contains 30 units.
+
+This indicates that most purchases consist of a single product, while a relatively small number of transactions contain multiple units. This pattern is consistent with the revenue distribution, where most transactions are relatively low-value and a smaller number generate substantially higher revenue.
+
+**Initial Product-Level Observations**
+
+The initial exploration also revealed several patterns that required deeper investigation:
+
+- Toys is the largest revenue-contributing category, accounting for 35.25% of total revenue.
+- Lego Bricks contributes 46.89% of Toys revenue, making it a major driver of the overall sales trend.
+- Revenue and profit contributions do not always align. For example, Action Figures generate a higher share of Toys' profit than Lego Bricks despite having a lower revenue contribution.
+- Magic Sand has shown notable sales growth since Q4 2022, making it a potential product for further investigation.
+- Colorbuds contributes significantly to Electronics revenue and profit, but its sales have shown a declining trend over the analysis period.
+
+These initial findings suggest that revenue performance may be highly influenced by a small number of products, while some lower-revenue products may provide stronger profit or growth opportunities.
+
+Therefore, the next stage of the analysis focuses on revenue trends, product and category performance, profitability, and inventory allocation across stores.
 
 ### 2.3 Key Metrics Created
 
