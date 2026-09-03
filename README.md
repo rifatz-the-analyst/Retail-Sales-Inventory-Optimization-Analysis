@@ -20,12 +20,10 @@ This analysis aims to answer the following questions:
 
 ## 2. Data Preparation & Data Structure
 
-<p align="center">
-<img width="800" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/ETL%20Workflows.png" />
-
 ### 2.1 Data Sources
 
-The analysis uses five datasets:
+The analysis uses five datasets, sourced from the **Mexico Toy Sales** dataset by [Maven Analytics](https://mavenanalytics.io/data-playground/mexico-toy-sales) (Public Domain license):
+
 - Sales transactions
 - Product information
 - Store information
@@ -95,6 +93,16 @@ Dimension Tables:
 <p align="center">
 <img width="500" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Data%20Model.png" />
 
+### 2.5 Analytical Approach & Tools
+
+This analysis was conducted using three tools, each serving a distinct purpose in the workflow:
+
+- **MySQL** was used for data extraction, heavy-duty cleaning, and understanding the grain and relationships between tables (sales, products, stores, inventory, and calendar). It also supported initial exploration to validate data quality before deeper analysis.
+- **Python** was used for exploratory data analysis (EDA) — data profiling, segmentation, and deep-dive investigation into specific patterns identified during initial exploration (e.g., transaction revenue distribution, outlier detection using the IQR method).
+- **Power BI** was used for data modeling (star schema), visual EDA to validate and communicate patterns interactively, and building the final dashboard for stakeholder consumption.
+
+This division of labor reflects a typical end-to-end analytics workflow: SQL for structured data preparation, Python for statistical/analytical depth, and Power BI for modeling and stakeholder-facing visualization.
+
 ## 3. Executive Summary
 
 - The analysis reveals that Maven Toys exhibits clear signs of seasonal demand, with sales peaks occurring during spring and year-end holiday periods. Sales performance in 2023 outperformed the same period in 2022, supported primarily by higher transaction volume.
@@ -104,6 +112,22 @@ Dimension Tables:
 - Inventory analysis also reveals mismatches between stock allocation and demand patterns. Several top-selling products have less than seven days of inventory coverage, while slower-moving products remain overstocked in certain stores. These issues become particularly important as the business approaches the Q4 holiday season.
 
 ## Deep Analysis
+
+### Investigation Flow
+
+The analysis followed an iterative, top-down investigative process rather than a fixed checklist:
+
+1. **Started with revenue trend analysis** at the monthly level to understand overall growth patterns and identify potential seasonality.
+2. **Broke down revenue by product category** to identify which categories drive overall performance — Toys emerged as the largest revenue contributor.
+3. **Drilled into Toys at the product level**, which revealed Lego Bricks as the largest revenue contributor within the category.
+4. **Cross-checked revenue against profit** at the product level within Toys — despite Lego Bricks leading in revenue, Action Figures contributed more to category profit, indicating a revenue-profit misalignment worth investigating further.
+5. **Repeated the revenue-vs-profit check at the category level**, which revealed that while Toys leads in revenue, Electronics actually generates more profit relative to its size.
+6. **Drilled into Electronics**, finding that Colorbuds dominates both revenue and profit within the category — and is in fact the single largest profit contributor across the entire business.
+7. **Investigated the declining trend visible in the Electronics category chart**, tracing it back specifically to Colorbuds' declining performance.
+8. **Reviewed other categories for emerging patterns**, identifying a sharp upward trend in Magic Sand (Arts & Crafts). This was confirmed quantitatively by calculating its Compound Monthly Growth Rate (CMGR).
+9. **For inventory analysis**, a 3-month baseline (Jul–Sep 2023) was deliberately chosen to calculate average daily sales and coverage days per store — using the most recent quarter ensures the analysis reflects current demand patterns rather than being diluted by demand from earlier in the ~21-month dataset.
+
+Each subsequent section in this Deep Analysis reflects a stage in this investigation.
 
 ### 4.1 Seasonal Sales Performance
 
@@ -175,6 +199,8 @@ This trend suggests that Magic Sand could become a future growth driver and may 
 ### 4.6 Inventory Optimization Analysis
 
 <img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/78996449b1c2badb4502a634c7c2f0f3687f0655/Inventory%20Coverage.png" />
+
+To ensure the coverage-days calculation reflects current demand rather than being diluted by 21 months of historical fluctuation, average daily sales were calculated using a 3-month baseline (July–September 2023) — the most recent quarter available in the dataset.
 
 Overall inventory analysis across all stores:
 
@@ -274,6 +300,11 @@ Implement a simple inventory monitoring framework using inventory coverage days 
 - Improve inventory planning decisions.
 - Reduce excess inventory costs.
 - Increase product availability for customers.
+
+## Limitations
+
+- **Limited time range for seasonality analysis.** The dataset covers January 2022 to September 2023 (~21 months, less than two full years). While recurring peaks were observed around Q2 and Q4, this timeframe is not sufficient to confirm seasonality with statistical confidence — a longer historical range would be needed to distinguish genuine seasonal patterns from year-specific anomalies.
+- **Inventory data reflects a single snapshot, not historical stock levels.** The inventory table only captures current stock on hand rather than monthly or periodic stock records. As a result, true inventory turnover (units sold relative to average inventory held over a matching period) could not be calculated. Coverage days were used instead as a proxy, based on recent average daily sales relative to current stock.
 
 ## Dashboard Preview
 <img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Overview.png" />
