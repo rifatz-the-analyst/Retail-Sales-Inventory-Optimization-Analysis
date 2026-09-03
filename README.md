@@ -42,6 +42,9 @@ The analysis uses five datasets, sourced from the **Mexico Toy Sales** dataset b
 
 **Transaction and Revenue Profile**
 
+<p align="center">
+<img width="800" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/7e2abfbcc7d98327c8d7dbbf7e5d7934689d9396/revenue%20distribution.png" />
+
 The sales data contains approximately 829K transactions from January 2022 to September 2023. Transaction revenue is relatively concentrated around lower values, with a mean of $17.42 and a median of $15. The maximum transaction revenue is $880, indicating the presence of a small number of high-value transactions.
 
 Using the IQR method, the upper bound for transaction revenue was calculated at $36.45. Approximately 10.84% of transactions exceed this threshold, suggesting that the revenue distribution is right-skewed. These higher-value transactions may be driven by products with higher prices or transactions involving multiple units.
@@ -149,7 +152,7 @@ Although the pattern appears consistent, additional historical data would be req
 
 The Toys category contributes 35.25% of total revenue, making it the company's largest revenue driver. Within the category, Lego Bricks account for 46.89% of category sales.
 
-Trend analysis shows that changes in Lego Bricks sales closely mirror changes in total company revenue. It supported by a strong positive correlation (r = 0.55) between monthly revenue from Lego Bricks and the company’s total revenue. Combined with the fact that the top 25% of products generate 61.81% of total revenue, this suggests that business performance is highly concentrated among a small number of products.
+Trend analysis shows that changes in Lego Bricks sales closely mirror changes in total company revenue. It supported by a moderate positive correlation (r = 0.55) and statistically significant (p-value = 0.95%) between monthly revenue from Lego Bricks and the company’s total revenue. Combined with the fact that the top 25% of products generate 61.81% of total revenue, this suggests that business performance is highly concentrated among a small number of products.
 
 This indicates that business performance is heavily influenced by top products, increasing vulnerability to demand changes, competitive pressure, or supply chain disruptions affecting that product.
 
