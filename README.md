@@ -114,7 +114,7 @@ This division of labor reflects a typical end-to-end analytics workflow: SQL for
 - The Electronics category generates significantly more profit relative to its revenue contribution, while products such as Magic Sand demonstrate promising growth potential and may help diversify future revenue streams.
 - Inventory analysis also reveals mismatches between stock allocation and demand patterns. Several top-selling products have less than seven days of inventory coverage, while slower-moving products remain overstocked in certain stores. These issues become particularly important as the business approaches the Q4 holiday season.
 
-## Deep Analysis
+## 4. Analysis and Insights
 
 ### Investigation Flow
 
@@ -222,89 +222,89 @@ These conditions create two business risks:
 
 With Q4 approaching and historical data suggesting stronger seasonal demand, inventory allocation becomes increasingly important to maintain product availability and support revenue growth.
 
-## Recommendations
+## 5. Recommendations
 
-### Recommendation 1: Increase Visibility of High-Margin Products
+### 5.1 Increase Visibility of High-Margin Products
 
-**Finding**
+- **Finding**
 
-Across multiple categories, the products generating the highest profit are not the products generating the highest sales. For example, Action Figures contribute 32.21% of profit within the Toys category despite generating a smaller share of revenue than Lego Bricks.
+  Across multiple categories, the products generating the highest profit are not the products generating the highest sales. For example, Action Figures contribute 32.21% of profit within the Toys category despite generating a smaller share of revenue than Lego Bricks.
 
-**Recommendation**
+- **Recommendation**
 
-Prioritize high-margin products in promotions, product placement, and cross-selling campaigns. Testing targeted campaigns for Action Figures and other category-level profit leaders could help improve profit performance without relying solely on additional sales volume.
+  Prioritize high-margin products in promotions, product placement, and cross-selling campaigns. Testing targeted campaigns for Action Figures and other category-level profit leaders could help improve profit performance without relying solely on additional sales volume.
 
-**Expected Impact**
+- **Expected Impact**
+  
+  - Increase profit generated per transaction.
+  - Improve overall profit margins.
+  - Reduce dependence on high-revenue but lower-margin products.
 
-- Increase profit generated per transaction.
-- Improve overall profit margins.
-- Reduce dependence on high-revenue but lower-margin products.
+### 5.2 Reduce Revenue Dependence on Lego Bricks
 
-### Recommendation 2: Reduce Revenue Dependence on Lego Bricks
+- **Finding**
 
-**Finding**
+  The Toys category contributes 35.25% of total revenue, and Lego Bricks account for 46.89% of category sales. Overall revenue trends closely follow Lego Bricks performance, indicating concentration risk.
 
-The Toys category contributes 35.25% of total revenue, and Lego Bricks account for 46.89% of category sales. Overall revenue trends closely follow Lego Bricks performance, indicating concentration risk.
+- **Recommendation**
 
-**Recommendation**
+  Invest in promotional campaigns for emerging products such as Magic Sand and other growing products to diversify the revenue mix. Product bundles and seasonal promotions could help increase adoption of alternative products.
 
-Invest in promotional campaigns for emerging products such as Magic Sand and other growing products to diversify the revenue mix. Product bundles and seasonal promotions could help increase adoption of alternative products.
+- **Expected Impact**
+  
+  - Reduce revenue concentration risk.
+  - Create additional growth drivers beyond Lego Bricks.
+  - Improve long-term revenue stability if demand for Lego Bricks declines.
 
-**Expected Impact**
+### 5.3 Investigate the Decline in Colorbuds Sales
 
-- Reduce revenue concentration risk.
-- Create additional growth drivers beyond Lego Bricks.
-- Improve long-term revenue stability if demand for Lego Bricks declines.
+- **Finding**
 
-### Recommendation 3: Investigate the Decline in Colorbuds Sales
+  Colorbuds contribute 20.80% of total company profit and over half of Electronics profit, yet sales have steadily declined since January 2022.
 
-**Finding**
+- **Recommendation**
 
-Colorbuds contribute 20.80% of total company profit and over half of Electronics profit, yet sales have steadily declined since January 2022.
+  Conduct additional analysis on Colorbuds performance, including store-level trends, pricing, and customer purchasing patterns. Because Colorbuds represent a significant portion of company profit, understanding the cause of the decline should be prioritized before implementing corrective actions.
 
-**Recommendation**
+- **Expected Impact**
 
-Conduct additional analysis on Colorbuds performance, including store-level trends, pricing, and customer purchasing patterns. Because Colorbuds represent a significant portion of company profit, understanding the cause of the decline should be prioritized before implementing corrective actions.
+  - Protect one of the company's largest profit streams.
+  - Identify opportunities to recover declining sales.
+  - Prevent further erosion of category profitability.
 
-**Expected Impact**
+### 5.4 Reallocate Inventory Before Peak Season
 
-- Protect one of the company's largest profit streams.
-- Identify opportunities to recover declining sales.
-- Prevent further erosion of category profitability.
+- **Finding**
 
-### Recommendation 4: Reallocate Inventory Before Peak Season
+  Many top-selling products have fewer than 7 days of inventory coverage, while some slower-moving products exceed 30 days of coverage. Several stores also have products that are already out of stock.
 
-**Finding**
+- **Recommendation**
 
-Many top-selling products have fewer than 7 days of inventory coverage, while some slower-moving products exceed 30 days of coverage. Several stores also have products that are already out of stock.
+  Reallocate inventory from overstocked products and stores to locations where high-demand products face stockout risk. Inventory planning should focus on products with strong daily demand ahead of the expected Q4 sales increase.
 
-**Recommendation**
+- **Expected Impact**
 
-Reallocate inventory from overstocked products and stores to locations where high-demand products face stockout risk. Inventory planning should focus on products with strong daily demand ahead of the expected Q4 sales increase.
+  - Reduce lost sales from stockouts.
+  - Improve inventory utilization across stores.
+  - Better support expected seasonal demand during Q4.
 
-**Expected Impact**
+### 5.5 Build a Demand-Based Inventory Monitoring Process
 
-- Reduce lost sales from stockouts.
-- Improve inventory utilization across stores.
-- Better support expected seasonal demand during Q4.
+- **Finding**
 
-### Recommendation 5: Build a Demand-Based Inventory Monitoring Process
+  Current stock levels are not consistently aligned with product demand, resulting in both stockout and overstock situations.
 
-**Finding**
+- **Recommendation**
 
-Current stock levels are not consistently aligned with product demand, resulting in both stockout and overstock situations.
+  Implement a simple inventory monitoring framework using inventory coverage days and average daily sales as key metrics. Products with coverage below 7 days can be flagged as "Reorder Risk," while products exceeding 30 days can be flagged as "Overstock Risk."
 
-**Recommendation**
+- **Expected Impact**
 
-Implement a simple inventory monitoring framework using inventory coverage days and average daily sales as key metrics. Products with coverage below 7 days can be flagged as "Reorder Risk," while products exceeding 30 days can be flagged as "Overstock Risk."
+  - Improve inventory planning decisions.
+  - Reduce excess inventory costs.
+  - Increase product availability for customers.
 
-**Expected Impact**
-
-- Improve inventory planning decisions.
-- Reduce excess inventory costs.
-- Increase product availability for customers.
-
-## Limitations
+## 6. Limitations
 
 - **Limited time range for seasonality analysis.** The dataset covers January 2022 to September 2023 (~21 months, less than two full years). While recurring peaks were observed around Q2 and Q4, this timeframe is not sufficient to confirm seasonality with statistical confidence — a longer historical range would be needed to distinguish genuine seasonal patterns from year-specific anomalies.
 - **Inventory data reflects a single snapshot, not historical stock levels.** The inventory table only captures current stock on hand rather than monthly or periodic stock records. As a result, true inventory turnover (units sold relative to average inventory held over a matching period) could not be calculated. Coverage days were used instead as a proxy, based on recent average daily sales relative to current stock.
