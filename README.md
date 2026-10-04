@@ -17,6 +17,7 @@ This analysis aims to answer the following questions:
 5.	Which emerging products could become future growth drivers?
 6.	Is inventory distributed efficiently across stores based on demand?
 7.	What actions can be taken to improve profitability and inventory management before peak sales periods?
+8.	Could supply chain factors (supplier reliability, lead time) be contributing to the risks identified in inventory?
 
 ## 2. Data Preparation & Data Structure
 
@@ -29,6 +30,14 @@ The analysis uses five datasets, sourced from the **Mexico Toy Sales** dataset b
 - Store information
 - Inventory records
 - Calendar table
+
+Supplementary dataset:
+
+- Suppliers information
+- Product Suppliers
+- Purchase Orders transactions
+
+Those three tables were generated to extend this project into supply-chain-domain analysis. These are not part of the original Maven Analytics dataset.
 
 ### 2.2 Data Cleaning & Preparation
 
@@ -79,6 +88,7 @@ Therefore, the next stage of the analysis focuses on revenue trends, product and
 - Average Order Value (AOV)
 - Revenue Growth %
 - Profit Growth %
+- Demand During Lead Time (DDLT)
 
 ### 2.4 Data Model
 
@@ -87,11 +97,13 @@ A star schema was developed to support efficient reporting and analysis.
 Fact Tables:
 - Sales
 - Inventory
+- Purchase Orders
   
 Dimension Tables:
 - Products
 - Stores
 - Calendar
+- Suppliers
 
 <p align="center">
 <img width="500" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Data%20Model.png" />
@@ -111,7 +123,7 @@ This division of labor reflects a typical end-to-end analytics workflow: SQL for
 - The analysis reveals that Maven Toys exhibits clear signs of seasonal demand, with sales peaks occurring during spring and year-end holiday periods. Sales performance in 2023 outperformed the same period in 2022, supported primarily by higher transaction volume.
 - The Toys category remains the largest revenue contributor, generating 35.25% of total sales. However, nearly half of category revenue comes from a single product, Lego Bricks, creating a concentration risk for overall business performance.
 - While high-revenue products dominate sales, several higher-margin products contribute disproportionately to profit. This suggests opportunities to improve profitability through more targeted product promotion.
-- The Electronics category generates significantly more profit relative to its revenue contribution, while products such as Magic Sand demonstrate promising growth potential and may help diversify future revenue streams.
+- The Electronics category generates significantly more profit relative to its revenue contribution. Colorbuds' ongoing decline also shows signs of a compounding supply-side constraint, not demand alone.
 - Inventory analysis also reveals mismatches between stock allocation and demand patterns. Several top-selling products have less than seven days of inventory coverage, while slower-moving products remain overstocked in certain stores. These issues become particularly important as the business approaches the Q4 holiday season.
 
 ## 4. Analysis and Insights
@@ -186,6 +198,8 @@ Colorbuds dominate category performance:
 
 Additionally, Colorbuds contribute 20.80% ($834.944) of total company profit, making them the single largest profit contributor across all products. However, Colorbuds sales have steadily declined between January 2022 and September 2023. Between January 2022 and September 2023, Colorbuds profit declined by 68%, equivalent to a compound monthly decline rate of 5.54%. If this trend continues over the next three months, annual profit could decrease by an estimated $138,768 (The estimate assumes the historical compound monthly decline rate of 5.54% continues unchanged over the next three months).
 
+Is this purely demand-side? A supplementary supply chain analysis tested whether supply constraints could be compounding the decline. Demand During Lead Time (DDLT) was calculated for Colorbuds specifically: it is supplied with one of the longest average lead times in the catalog (~14.6 days), and 52–54% of stores carrying Colorbuds currently hold less stock than their DDLT — a structural condition that leaves them vulnerable to stockouts before replenishment arrives.
+
 This trend may indicate weakening demand and warrants further investigation to identify potential causes such as changing customer preferences, increased competition, or product lifecycle effects.
 
 ### 4.5 Emerging Growth Opportunity
@@ -210,17 +224,25 @@ Overall inventory analysis across all stores:
 - The Mini Basketball Hoop has 234 units in stock and 2.55 units sold per day. Therefore, the coverage stock days are 91.61 days (highest). Ideally, inventory should be 76 units for 30 days, resulting in an excess of 163 units. Consequently, the excess inventory of Mini Basketball Hoops ties up approximately $1,422 in capital.
 - The Dino Egg has 649 units in stock and 104.03 units sold per day. Therefore, the coverage stock days are 6.24 days (lowest). Ideally, inventory should be 729 units for 7 days. Consequently, the lack inventory of Mini Basketball Hoops makes approximately $800 potential revenue loss.
 
-However, inventory analysis reveals a mismatch between stock levels and actual demand across stores. If we analyse every store inventory, some stores have risky and excessive products:
-
-- Many top-selling products have fewer than 7 days of inventory coverage. Every single store has at least one product that inventory coverage days fewer than 7 days. Some products are completely out of stock in certain stores.
-- Several lower-demand products have more than 30 days of inventory coverage. Top 5 product by coverage days in every single store are higher than 30 days.
+Every store has at least one product with coverage below 7 days, and the top 5 products by coverage days in every store exceed 30 days — creating two risks: lost sales from stockouts, and holding costs from excess inventory.
 
 These conditions create two business risks:
 
-- Lost sales opportunities from stockouts on high-demand and low-stocks products. For example, the inventory analysis in Ciudad de Mexico 2 Store (highest average daily order). It has eight products with lowest coverage days that fewer than 7 days. Those products have $1,749 potential revenue loss. In addition, an analysis of opportunities across 50 stores shows that there are a total of 370 products have $30,646 potential revenue loss with $8,504 potential profit loss.
+- Lost sales opportunities from products with stock on-hand less than Demand During Lead Time (DDLT). The result is 474 of 1,593 active combinations (29.8%) are at risk — representing $54,164 in potential revenue and $16,245 in potential margin.
+Toys has highest revenue-at-risk ($16,750), while Electronics has highest at margin-at-risk ($5,941). Colorbuds alone has $8,882 revenue at risk (16%), and $4,737 margin at risk.
+Moreover, across the full purchase order history, partial fulfillment resulted in 13,638 short-shipped units and an estimated $46,856 in lost margin. Suppliers with reliability ≤75 account for 61% of this total ($28,585), despite being a minority of the supplier base — direct evidence that renegotiation would concentrate value where it matters most.
 - Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products. For example, the inventory analysis in Morelia 1 Store (highest coverage days). It has twelve products with highest coverage days that more than 30 days. Those products have $1,511 excess inventory value. In addition, an analysis of opportunities across 50 stores shows that there are a total of 492 products have $63,488 excess inventory value.
 
 With Q4 approaching and historical data suggesting stronger seasonal demand, inventory allocation becomes increasingly important to maintain product availability and support revenue growth.
+
+### 4.7 Supplier Performance & Lead Time
+
+Supplier-level performance was evaluated using on-time delivery rate, delay rate, partial-fulfillment rate, and fill rate (received ÷ ordered units).
+
+- Sports & Outdoors suppliers carry the highest risk: both suppliers in this category have a reliability score of 66, with delay rates of 18–19% — the highest of any category.
+- Electronics suppliers are comparatively reliable (scores 86–88, delay rates 7.8–8.5%) but carry the longest average lead time of any category (15.26 days, vs. 7.91 for Art & Crafts) — reliability and speed are independent risk factors, and Electronics' exposure in 4.4/4.6 stems from the latter, not unreliable suppliers.
+- Fill rate across all suppliers stays above 98% — partial-fulfillment events aren't rare (5–8% of orders), but the volume shortfall per event is typically small.
+- Lead time is also affected by geography: orders where the supplier's region differs from the store's region take 1.85 days longer on average (Welch's t-test, p < 0.0001, Cohen's d = 0.63 — a medium-to-large effect, not just significant due to large sample size). The pattern holds across every category, largest in Electronics (2.23-day gap).
 
 ## 5. Recommendations
 
@@ -280,7 +302,7 @@ With Q4 approaching and historical data suggesting stronger seasonal demand, inv
 
 - **Recommendation**
 
-  Reallocate inventory from overstocked products and stores to locations where high-demand products face stockout risk. Inventory planning should focus on products with strong daily demand ahead of the expected Q4 sales increase.
+  Reallocate inventory from overstocked products and stores to locations where high-demand products face stockout risk. Inventory planning should focus on DDLT exposure of the expected Q4 sales increase.
 
 - **Expected Impact**
 
@@ -292,17 +314,32 @@ With Q4 approaching and historical data suggesting stronger seasonal demand, inv
 
 - **Finding**
 
-  Current stock levels are not consistently aligned with product demand, resulting in both stockout and overstock situations.
+  Current stock levels are not consistently aligned with product demand, resulting in both stockout and overstock situations. 
 
 - **Recommendation**
 
-  Implement a simple inventory monitoring framework using inventory coverage days and average daily sales as key metrics. Products with coverage below 7 days can be flagged as "Reorder Risk," while products exceeding 30 days can be flagged as "Overstock Risk."
+  Implement an ongoing monitoring framework flagging products as "Reorder Risk" when `stock_on_hand < DDLT` and "Overstock Risk" when coverage exceeds 30 days. Alongside this, begin capturing inventory snapshots monthly (or more frequently) rather than a single point-in-time record, to enable true inventory turnover calculation and causal analysis of future stockout/demand patterns.
 
 - **Expected Impact**
 
   - Improve inventory planning decisions.
+  - More accurate reorder flagging than fixed thresholds
   - Reduce excess inventory costs.
   - Increase product availability for customers.
+
+### 5.6 Renegotiate or Diversify Low-Reliability Suppliers
+
+**Finding:**
+
+Suppliers with reliability ≤75 account for 61% ($28,585) of total estimated opportunity cost from partial fulfillment (4.7), despite being a minority of the supplier base. Sports & Outdoors suppliers show the highest delay rates (18–19%) of any category.
+
+**Recommendation:**
+
+Prioritize renegotiation or performance review for the lowest-reliability suppliers, starting with Sports & Outdoors. Evaluate a second supplier per high-risk category to reduce single-source dependency.
+
+**Expected Impact:**
+
+Reduced opportunity cost from partial/delayed fulfillment; lower stockout risk for exposed categories; stronger negotiating leverage from documented performance data.
 
 ## 6. Limitations
 
