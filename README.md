@@ -198,7 +198,7 @@ Colorbuds dominate category performance:
 
 Additionally, Colorbuds contribute 20.80% ($834.944) of total company profit, making them the single largest profit contributor across all products. However, Colorbuds sales have steadily declined between January 2022 and September 2023. Between January 2022 and September 2023, Colorbuds profit declined by 68%, equivalent to a compound monthly decline rate of 5.54%. If this trend continues over the next three months, annual profit could decrease by an estimated $138,768 (The estimate assumes the historical compound monthly decline rate of 5.54% continues unchanged over the next three months).
 
-Is this purely demand-side? A supplementary supply chain analysis tested whether supply constraints could be compounding the decline. Demand During Lead Time (DDLT) was calculated for Colorbuds specifically: it is supplied with one of the longest average lead times in the catalog (~14.6 days), and 52–54% of stores carrying Colorbuds currently hold less stock than their DDLT — a structural condition that leaves them vulnerable to stockouts before replenishment arrives.
+Is this purely demand-side? A supplementary supply chain analysis tested whether supply constraints could be compounding the decline. Demand During Lead Time (DDLT) was calculated for Colorbuds specifically: it is supplied with one of the longest average lead times in the catalog (~14.6 days), and 54% of stores carrying Colorbuds currently hold less stock than their DDLT — a structural condition that leaves them vulnerable to stockouts before replenishment arrives.
 
 This trend may indicate weakening demand and warrants further investigation to identify potential causes such as changing customer preferences, increased competition, or product lifecycle effects.
 
@@ -228,8 +228,8 @@ Every store has at least one product with coverage below 7 days, and the top 5 p
 
 These conditions create two business risks:
 
-- Lost sales opportunities from products with stock on-hand less than Demand During Lead Time (DDLT). The result is 474 of 1,593 active combinations (29.8%) are at risk — representing $54,164 in potential revenue and $16,245 in potential margin.
-Toys has highest revenue-at-risk ($16,750), while Electronics has highest at margin-at-risk ($5,941). Colorbuds alone has $8,882 revenue at risk (16%), and $4,737 margin at risk.
+- Lost sales opportunities from products with stock on-hand less than Demand During Lead Time (DDLT). The result is 471 of 1,593 active combinations (29.6%) are at risk — representing $54,156 in potential revenue and $16,239 in potential margin.
+Toys has highest revenue-at-risk ($16,745), while Electronics has highest at margin-at-risk ($5,939). Colorbuds alone has $8,877 revenue at risk (16%), and $4,734 margin at risk. This is consistent with the findings of the analysis of Lego bricks and Colorbuds.
 Moreover, across the full purchase order history, partial fulfillment resulted in 13,638 short-shipped units and an estimated $46,856 in lost margin. Suppliers with reliability ≤75 account for 61% of this total ($28,585), despite being a minority of the supplier base — direct evidence that renegotiation would concentrate value where it matters most.
 - Increased holding costs from excess inventory on slower-moving products, especially on low-demand and high-stocks products. For example, the inventory analysis in Morelia 1 Store (highest coverage days). It has twelve products with highest coverage days that more than 30 days. Those products have $1,511 excess inventory value. In addition, an analysis of opportunities across 50 stores shows that there are a total of 492 products have $63,488 excess inventory value.
 
@@ -329,17 +329,17 @@ Supplier-level performance was evaluated using on-time delivery rate, delay rate
 
 ### 5.6 Renegotiate or Diversify Low-Reliability Suppliers
 
-**Finding:**
+- **Finding:**
 
-Suppliers with reliability ≤75 account for 61% ($28,585) of total estimated opportunity cost from partial fulfillment (4.7), despite being a minority of the supplier base. Sports & Outdoors suppliers show the highest delay rates (18–19%) of any category.
+  Suppliers with reliability ≤75 account for 61% ($28,585) of total estimated opportunity cost from partial fulfillment (4.7), despite being a minority of the supplier base. Sports & Outdoors suppliers show the highest delay rates (18–19%) of any category.
+  
+- **Recommendation:**
 
-**Recommendation:**
+  Prioritize renegotiation or performance review for the lowest-reliability suppliers, starting with Sports & Outdoors. Evaluate a second supplier per high-risk category to reduce single-source dependency.
 
-Prioritize renegotiation or performance review for the lowest-reliability suppliers, starting with Sports & Outdoors. Evaluate a second supplier per high-risk category to reduce single-source dependency.
+- **Expected Impact:**
 
-**Expected Impact:**
-
-Reduced opportunity cost from partial/delayed fulfillment; lower stockout risk for exposed categories; stronger negotiating leverage from documented performance data.
+  Reduced opportunity cost from partial/delayed fulfillment; lower stockout risk for exposed categories; stronger negotiating leverage from documented performance data.
 
 ## 6. Limitations
 
