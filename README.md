@@ -105,9 +105,6 @@ Dimension Tables:
 - Calendar
 - Suppliers
 
-<p align="center">
-<img width="500" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Data%20Model.png" />
-
 ### 2.5 Analytical Approach & Tools
 
 This analysis was conducted using three tools, each serving a distinct purpose in the workflow:
@@ -214,8 +211,6 @@ Beginning in Q4 2022, Magic Sand experienced sustained revenue growth and increa
 This trend suggests that Magic Sand could become a future growth driver and may help reduce the company's dependence on Lego Bricks as its primary revenue source.
 
 ### 4.6 Inventory Optimization Analysis
-
-<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/78996449b1c2badb4502a634c7c2f0f3687f0655/Inventory%20Coverage.png" />
 
 To ensure the coverage-days calculation reflects current demand rather than being diluted by 21 months of historical fluctuation, average daily sales were calculated using a 3-month baseline (July–September 2023) — the most recent quarter available in the dataset.
 
@@ -348,7 +343,3 @@ Supplier-level performance was evaluated using on-time delivery rate, delay rate
 
 ## Dashboard Preview
 <img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Overview.png" />
-
-<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/781187eb517602eb6d57e004f3bb84d8ad5d8e32/Product.png" />
-
-<img width="1020" src="https://github.com/rifatz-the-analyst/Image-archieve/blob/78996449b1c2badb4502a634c7c2f0f3687f0655/Inventory.png" />
